@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font: normal 16pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando para ver se entendi</h1>
+    <input type="number" name="number1" id="number1"> +
+    <input type="number" name="number2" id="number2">
+    <input type="submit" value="Enviar" onclick="somar()">
+    <p id="res">Resultado</p>
+
+    <script>
+        function somar() {
+            var num1 = document.getElementById('number1')
+            var num2 = document.getElementById('number2')
+            var resultado = document.getElementById('res')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var s = n1 + n2
+            resultado.innerHTML = `A soma entre <strong>${n1}</strong> e <strong>${n2}</strong> é igual a: <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>
