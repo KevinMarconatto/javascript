@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando de outra forma</title>
+    <style>
+        div#kevin {
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="kevin">
+        Interagir!
+    </div>
+
+    <script>
+        var kevinho = document.getElementById('kevin')
+        kevinho.addEventListener('click', clicar)
+        kevinho.addEventListener('mouseenter', entrar)
+        kevinho.addEventListener('mouseout', sair)
+
+        function clicar() {
+            kevinho.innerText = 'Clicou!'
+            kevinho.style.background = 'violet'
+        }
+
+        function entrar() {
+            kevinho.innerText = 'Entrou!'
+            kevinho.style.background = 'pink'
+        }
+
+        function sair() {
+            kevinho.innerText = 'Saiu!'
+            kevinho.style.background = 'purple'
+        }
+    </script>
+</body>
+</html>
